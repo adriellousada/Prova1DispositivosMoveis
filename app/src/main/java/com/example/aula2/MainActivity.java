@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         RetrofitService.getServico().getUsers().enqueue(new Callback<List<User>>() {
             @Override
             public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-                List<User> listaDeUsers = response.body();
+                listaDeUsers = response.body();
                 List<String> nomesDeUsers = new ArrayList<String>();
                 for (User user: listaDeUsers){
                     nomesDeUsers.add(user.getName());
