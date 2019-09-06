@@ -3,20 +3,20 @@ package com.example.aula2;
 import java.util.HashMap;
 import java.util.Map;
 
-public class User {
+public class Notas {
 
-    private Integer id;
+    private double nota;
     private String name;
     private String email;
     private String phone;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    public Integer getId() {
-        return id;
+    public Double getNota() {
+        return nota;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId(Integer nota) {
+        this.nota = nota;
     }
 
     public String getName() {
