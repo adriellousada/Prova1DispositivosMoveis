@@ -5,50 +5,32 @@ import java.util.Map;
 
 public class Notas {
 
-    private double nota;
-    private String name;
-    private String email;
-    private String phone;
+    private String nota;
+    private String nome;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    public Double getNota() {
+    public String getNota() {
         return nota;
     }
 
-    public void setId(Integer nota) {
+    public void setNota(Double String) {
         this.nota = nota;
     }
 
     public String getName() {
-        return name;
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setName(String nome) {
+        this.nome = nome;
     }
 
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
     }
 
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
+    public void setAdditionalProperty(String nome, Object value) {
+        this.additionalProperties.put(nome, value);
     }
 
 }
